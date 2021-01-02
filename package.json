@@ -17,7 +17,6 @@
   },
   "license": "MIT",
   "author": "younho9 <younho9.choo@gmail.com>",
-  "main": "index.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "files": [
