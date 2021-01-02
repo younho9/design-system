@@ -1,6 +1,6 @@
 {
   "name": "@younho9/design-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Personal design system",
   "keywords": [
     "react",
@@ -20,6 +20,9 @@
   "main": "index.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "build": "rollup -c && tsc --emitDeclarationOnly",
     "build-storybook": "build-storybook",
