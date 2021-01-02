@@ -6,28 +6,28 @@ import { Button, ButtonProps } from './Button';
 
 export default {
   title: 'Components/Button',
-  component: Button
+  component: Button,
 } as Meta;
 
 export const Primary: Story<ButtonProps> = (args) => <Button {...args} />;
 Primary.args = {
   children: 'PRIMARY',
   variants: 'primary',
-  onClick: action("I'm Primary!")
+  onClick: action("I'm Primary!"),
 };
 
 export const Secondary: Story<ButtonProps> = (args) => <Button {...args} />;
 Secondary.args = {
   children: 'SECONDARY',
   variants: 'secondary',
-  onClick: action("I'm Secondary!")
+  onClick: action("I'm Secondary!"),
 };
 
 export const Tertiary: Story<ButtonProps> = (args) => <Button {...args} />;
 Tertiary.args = {
   children: 'Tertiary',
   variants: 'tertiary',
-  onClick: action("I'm Tertiary!")
+  onClick: action("I'm Tertiary!"),
 };
 
 const StyledButtonWrapper = styled.div`

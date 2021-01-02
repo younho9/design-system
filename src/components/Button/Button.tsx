@@ -33,7 +33,7 @@ const buttonSizes = {
     height: 2.5rem;
     font-size: 1.125rem;
     padding: 0 1.5rem;
-  `
+  `,
 };
 
 const DefaultButton = styled.button<ButtonProps>`

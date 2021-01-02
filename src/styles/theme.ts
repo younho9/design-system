@@ -21,13 +21,13 @@ export const colors = {
   purple600: '#7a6aff',
   purple700: '#664fff',
   purple800: '#3e2abe',
-  purple900: '#221477'
+  purple900: '#221477',
 };
 
 export const typography = {
   type: {
     primary:
-      "'Noto Sans KR', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+      "'Noto Sans KR', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
   },
   weight: {
     thin: 100,
@@ -35,26 +35,26 @@ export const typography = {
     regular: 400,
     medium: 500,
     bold: 700,
-    black: 900
-  }
+    black: 900,
+  },
 };
 
 export const border = {
   width: '1px',
   radius: {
     small: '0.375rem',
-    big: '1rem'
-  }
+    big: '1rem',
+  },
 };
 
 export const shadow = {
   weak: '0px 0px 8px rgba(0, 0, 0, 0.2)',
-  strong: '0 30px 60px 0 rgba(90, 116, 148, 0.4)'
+  strong: '0 30px 60px 0 rgba(90, 116, 148, 0.4)',
 };
 
 export const theme: DefaultTheme = {
   colors,
   typography,
   border,
-  shadow
+  shadow,
 };

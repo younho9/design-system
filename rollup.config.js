@@ -18,19 +18,19 @@ export default {
     peerDepsExternal(),
     resolve({ extensions }),
     commonjs({
-      include: 'node_modules/**'
+      include: 'node_modules/**',
     }),
     babel({
       extensions,
       include: ['src/**/*'],
       presets: [['react-app', { flow: false, typescript: true }]],
-      runtimeHelpers: true
-    })
+      runtimeHelpers: true,
+    }),
   ],
   output: [
     {
       file: pkg.module,
-      format: 'es'
-    }
-  ]
+      format: 'es',
+    },
+  ],
 };
