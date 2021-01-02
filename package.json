@@ -18,7 +18,10 @@
   "license": "MIT",
   "author": "younho9 <younho9.choo@gmail.com>",
   "main": "index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
+    "build": "rollup -c && tsc --emitDeclarationOnly",
     "build-storybook": "build-storybook",
     "lint:package": "sort-package-json",
     "storybook": "start-storybook -p 6006"
@@ -32,9 +35,16 @@
     "@storybook/react": "6.1.11",
     "@types/styled-components": "5.1.7",
     "babel-loader": "8.2.2",
+    "babel-preset-react-app": "10.0.0",
     "react": "17.0.1",
     "react-docgen-typescript-loader": "3.7.2",
     "react-dom": "17.0.1",
+    "rollup": "2.35.1",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-cleaner": "1.0.0",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-peer-deps-external": "2.2.4",
     "sort-package-json": "1.48.0",
     "styled-components": "5.2.1",
     "typescript": "4.1.3"
