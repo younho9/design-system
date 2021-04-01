@@ -4,7 +4,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
-import pkg from './package.json';
+import pkg from '../../package.json';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 

@@ -1,0 +1,41 @@
+{
+  "name": "@younho9/styled-design-system",
+  "version": "0.1.0",
+  "description": "Personal design system using styled-components",
+  "keywords": [
+    "react",
+    "typescript",
+    "styled-components",
+    "storybook"
+  ],
+  "homepage": "https://github.com/younho9/design-system/tree/main/packages/styled-design-system",
+  "bugs": {
+    "url": "https://github.com/younho9/design-system/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/younho9/design-system.git",
+    "directory": "packages/styled-design-system"
+  },
+  "license": "MIT",
+  "author": "younho9 <younho9.choo@gmail.com>",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "rollup -c && tsc --emitDeclarationOnly",
+    "build-storybook": "build-storybook",
+    "format": "prettier --write .",
+    "lint": "tsc --noEmit && eslint .",
+    "lint:fix": "yarn lint --fix",
+    "lint:package": "sort-package-json",
+    "storybook": "start-storybook -p 6006"
+  },
+  "peerDependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "5.2.1"
+  }
+}
