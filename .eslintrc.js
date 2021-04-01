@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
     jest: true,
+    node: true,
   },
   extends: [
     'airbnb-typescript',
@@ -40,7 +41,7 @@ module.exports = {
       'error',
       {
         'newlines-between': 'always',
-        alphabetize: {
+        'alphabetize': {
           order: 'asc',
           caseInsensitive: true,
         },
