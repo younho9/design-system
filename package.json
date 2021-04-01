@@ -1,11 +1,7 @@
 {
   "name": "@younho9/root",
-  "private": true,
   "version": "0.1.0",
-  "workspaces": [
-    "packages/*",
-    "examples/*"
-  ],
+  "private": true,
   "description": "Personal design system",
   "keywords": [
     "react",
@@ -22,17 +18,16 @@
   },
   "license": "MIT",
   "author": "younho9 <younho9.choo@gmail.com>",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "yarn lint --fix",
     "lint:package": "sort-package-json",
     "prepare": "husky install"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
