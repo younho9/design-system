@@ -31,7 +31,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "yarn lint:fix"
+      "eslint --fix"
     ],
     "*.{js,ts,jsx,tsx,json,css,md,mdx}": [
       "prettier --write"
