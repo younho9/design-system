@@ -1,4 +1,4 @@
-import { fontUrl } from '../styles/global';
+import { fontUrl } from 'src/styles';
 
 // Load the font and avoid re-loading it when components change
 const fontLinkId = 'storybook-font-link-tag';

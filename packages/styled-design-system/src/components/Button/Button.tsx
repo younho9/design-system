@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-import { theme } from '../../styles/theme';
+import { theme } from 'src/styles';
 
 export type ButtonProps = {
   /** 버튼 안의 내용 */
