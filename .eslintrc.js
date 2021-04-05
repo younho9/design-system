@@ -41,6 +41,14 @@ module.exports = {
       'error',
       {
         'newlines-between': 'always',
+        'pathGroups': [
+          {
+            pattern: 'src/**',
+            group: 'external',
+            position: 'after',
+          },
+        ],
+        'pathGroupsExcludedImportTypes': ['builtin'],
         'alphabetize': {
           order: 'asc',
           caseInsensitive: true,
