@@ -1,3 +1,5 @@
+const { join } = require('path');
+
 module.exports = {
   extends: ['../../.eslintrc.js'],
   plugins: ['@typescript-eslint'],
@@ -10,5 +12,13 @@ module.exports = {
     project: './tsconfig.eslint.json',
     createDefaultProgram: true,
     tsconfigRootDir: __dirname,
+  },
+  rules: {
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        packageDir: [__dirname, join(__dirname, '../../')],
+      },
+    ],
   },
 };
